@@ -227,6 +227,50 @@ if __name__ == "__main__":
 
     y_true, y_scores, ious = match_predictions(gt, preds)
 
+                    # Step 1: Find the minimum score among TPs
+tp_scores = y_scores[y_true == 1]
+if len(tp_scores) == 0:
+    print("⚠️ No true positives found. Skipping threshold filtering.")
+else:
+    min_tp_score = np.min(tp_scores)
+
+    # Step 2: Count FPs with score >= min_tp_score
+    fp_scores = y_scores[y_true == 0]
+    high_score_fp_count = np.sum(fp_scores >= min_tp_score)
+
+    print(f"✅ Least TP score: {min_tp_score:.4f}")
+    print(f"📦 False Positives with score ≥ {min_tp_score:.4f}: {high_score_fp_count}")
+
+    # Step 3: Filter predictions with score ≥ min_tp_score
+    filtered_preds = defaultdict(list)
+    for img_name, boxes in preds.items():
+        for box in boxes:
+            if box["score"] >= min_tp_score:
+                filtered_preds[img_name].append(box)
+
+    # Step 4: Save filtered predictions to JSON
+    output_dir = "filtered_predictions"
+    os.makedirs(output_dir, exist_ok=True)
+
+    for img_name, boxes in filtered_preds.items():
+        out_path = os.path.join(output_dir, img_name.replace(".png", ".json"))
+        with open(out_path, "w") as f:
+            json.dump({
+                "image": img_name,
+                "bboxes": [
+                    {
+                        "bbox": box["bbox"],
+                        "text_score": box["score"],
+                        "label": "white product labels"
+                    }
+                    for box in boxes
+                ]
+            }, f, indent=2)
+
+    print(f"✅ Filtered predictions saved to '{output_dir}/'")
+
+
+
     print("\nSample predicted boxes vs. GT for first image with predictions:")
     for img_name in preds:
         if img_name in gt:
