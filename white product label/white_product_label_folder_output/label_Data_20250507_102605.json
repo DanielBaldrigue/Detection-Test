@@ -1,0 +1,20 @@
+{
+  "image": "label_Data_20250507_102605.png",
+  "prompt": "white product label",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        567.6924438476562,
+        168.74844360351562,
+        812.3133544921875,
+        410.5873107910156
+      ],
+      "text_score": 0.9284088015556335,
+      "mask_score": 0.99609375,
+      "label": "white product label"
+    }
+  ]
+}

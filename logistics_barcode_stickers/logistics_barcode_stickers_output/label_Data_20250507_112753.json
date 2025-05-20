@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250507_112753.png",
+  "prompt": "logistics barcode stickers",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        536.1954345703125,
+        173.25482177734375,
+        791.0316162109375,
+        427.14044189453125
+      ],
+      "text_score": 0.7879312038421631,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        0.5658411979675293,
+        287.479248046875,
+        71.50115966796875,
+        466.04852294921875
+      ],
+      "text_score": 0.43014734983444214,
+      "mask_score": 0.9921875,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        565.3887329101562,
+        196.51661682128906,
+        744.4832763671875,
+        252.99462890625
+      ],
+      "text_score": 0.08035746961832047,
+      "mask_score": 0.97265625,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        180.44754028320312,
+        4.8479533195495605,
+        1241.781005859375,
+        716.6044311523438
+      ],
+      "text_score": 0.09670579433441162,
+      "mask_score": 0.984375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        6.315116882324219,
+        2.9148316383361816,
+        1270.290771484375,
+        717.05859375
+      ],
+      "text_score": 0.11596072465181351,
+      "mask_score": 0.9609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        536.730224609375,
+        173.38204956054688,
+        790.526123046875,
+        427.1837158203125
+      ],
+      "text_score": 0.07477004081010818,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        192.60520935058594,
+        41.05470657348633,
+        1202.4228515625,
+        712.0679321289062
+      ],
+      "text_score": 0.053403329104185104,
+      "mask_score": 0.98828125,
+      "label": "logistics barcode stickers"
+    }
+  ]
+}

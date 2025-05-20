@@ -1,0 +1,42 @@
+{
+  "image": "label_Data_20250414_141312.png",
+  "prompt": "adhesive mail labels",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        273.4422302246094,
+        22.586990356445312,
+        1167.8648681640625,
+        693.0455322265625
+      ],
+      "text_score": 0.5770187377929688,
+      "mask_score": 0.99609375,
+      "label": "adhesive mail labels"
+    },
+    {
+      "bbox": [
+        582.3711547851562,
+        95.64598846435547,
+        811.121337890625,
+        326.1822509765625
+      ],
+      "text_score": 0.5822535157203674,
+      "mask_score": 0.99609375,
+      "label": "adhesive mail labels"
+    },
+    {
+      "bbox": [
+        54.571495056152344,
+        7.429332733154297,
+        1250.740234375,
+        711.5852661132812
+      ],
+      "text_score": 0.1233656257390976,
+      "mask_score": 0.94140625,
+      "label": "adhesive mail labels"
+    }
+  ]
+}

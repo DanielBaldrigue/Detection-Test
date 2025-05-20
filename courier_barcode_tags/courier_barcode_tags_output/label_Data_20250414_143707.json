@@ -1,0 +1,53 @@
+{
+  "image": "label_Data_20250414_143707.png",
+  "prompt": "courier barcode tags",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        578.439453125,
+        93.69316864013672,
+        811.0380859375,
+        327.336669921875
+      ],
+      "text_score": 0.7905303239822388,
+      "mask_score": 0.9921875,
+      "label": "courier barcode tags"
+    },
+    {
+      "bbox": [
+        265.2111511230469,
+        19.266178131103516,
+        1170.7508544921875,
+        699.2546997070312
+      ],
+      "text_score": 0.2107662856578827,
+      "mask_score": 0.99609375,
+      "label": "courier barcode tags"
+    },
+    {
+      "bbox": [
+        578.8770751953125,
+        93.91094207763672,
+        810.538818359375,
+        327.0703125
+      ],
+      "text_score": 0.07585817575454712,
+      "mask_score": 0.9921875,
+      "label": "courier tags"
+    },
+    {
+      "bbox": [
+        605.26318359375,
+        113.9087905883789,
+        780.1712036132812,
+        154.26345825195312
+      ],
+      "text_score": 0.06371499598026276,
+      "mask_score": 0.96484375,
+      "label": "courier barcode tags"
+    }
+  ]
+}

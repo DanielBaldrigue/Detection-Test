@@ -15,35 +15,40 @@ def is_box_inside(inner, outer):
         outer[3] >= inner[3]
     )
 
-def filter_large_enclosing_boxes(pred_boxes_dict):
-    """
-    Removes large predicted boxes that completely enclose another one.
-    Keeps the smaller, inner box in such cases.
-    Returns:
-        - filtered_dict: final filtered predictions
-        - removed_dict: dict of removed predictions for inspection
-    """
+def filter_large_enclosing_boxes_and_track_tps(pred_boxes_dict, gt_boxes_dict, iou_thresh=0.5):
     filtered_dict = {}
-    removed_dict = {}
+    filtered_true_positives = {}
 
     for img_name, boxes in pred_boxes_dict.items():
+        boxes = sorted(boxes, key=lambda b: -b["score"])
         keep = [True] * len(boxes)
-        removed = []
+        is_tp = [False] * len(boxes)
+        removed_tp = []
+
+        import copy
+        gt_boxes = copy.deepcopy(gt_boxes_dict.get(img_name, []))
+        for i, pred in enumerate(boxes):
+            for gt in gt_boxes:
+                if not gt.get("matched") and iou(pred["bbox"], gt["bbox"]) >= iou_thresh:
+                    is_tp[i] = True
+                    gt["matched"] = True
+                    break
 
         for i in range(len(boxes)):
             for j in range(len(boxes)):
-                if i != j and keep[j]:  # j may enclose i
-                    if is_box_inside(boxes[i]["bbox"], boxes[j]["bbox"]):
+                if i != j and keep[j]:
+                    # Only remove the outer box if it's lower confidence than the inner one
+                    if is_box_inside(boxes[i]["bbox"], boxes[j]["bbox"]) and boxes[i]["score"] > boxes[j]["score"]:
                         keep[j] = False
-                        removed.append(boxes[j])  # store the removed outer box
+                        if is_tp[j]:
+                            removed_tp.append(boxes[j])
 
         filtered_boxes = [box for box, k in zip(boxes, keep) if k]
         filtered_dict[img_name] = filtered_boxes
+        if removed_tp:
+            filtered_true_positives[img_name] = removed_tp
 
-        if removed:
-            removed_dict[img_name] = removed
-
-    return filtered_dict, removed_dict
+    return filtered_dict, filtered_true_positives
 
 def convert_rel_to_abs(x, y, w, h, img_w, img_h):
     x1 = x / 100 * img_w
@@ -214,11 +219,11 @@ if __name__ == "__main__":
 
     gt = load_ground_truth(args.gt_file)
     preds = load_predictions(args.pred_dir)
-    preds, removed_preds = filter_large_enclosing_boxes(preds)
+    preds, filtered_tp_preds = filter_large_enclosing_boxes_and_track_tps(preds, gt, iou_thresh=0.3)
 
-    # Optional: save removed boxes to file
-    with open("filtered_out_predictions.json", "w") as f:
-        json.dump(removed_preds, f, indent=2)
+    # Save removed true positive predictions
+    with open("filtered_true_positives.json", "w") as f:
+        json.dump(filtered_tp_preds, f, indent=2)
 
     y_true, y_scores, ious = match_predictions(gt, preds)
 

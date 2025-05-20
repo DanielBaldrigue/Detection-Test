@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250414_141312.png",
+  "prompt": "logistics barcode stickers",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        582.5484008789062,
+        95.59500122070312,
+        811.1058959960938,
+        325.9931640625
+      ],
+      "text_score": 0.7826625108718872,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        273.55340576171875,
+        20.680259704589844,
+        1166.2071533203125,
+        692.087158203125
+      ],
+      "text_score": 0.18126320838928223,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        582.6800537109375,
+        95.75860595703125,
+        810.82568359375,
+        325.7586669921875
+      ],
+      "text_score": 0.08035746961832047,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        609.2269287109375,
+        115.44003295898438,
+        780.1220092773438,
+        155.79092407226562
+      ],
+      "text_score": 0.07807816565036774,
+      "mask_score": 0.96875,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        600.0425415039062,
+        200.13568115234375,
+        679.37451171875,
+        235.8399200439453
+      ],
+      "text_score": 0.052618950605392456,
+      "mask_score": 0.93359375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        602.9761962890625,
+        159.7134552001953,
+        781.85009765625,
+        199.12576293945312
+      ],
+      "text_score": 0.05033063143491745,
+      "mask_score": 0.95703125,
+      "label": "logistics"
+    },
+    {
+      "bbox": [
+        57.26539611816406,
+        8.526721000671387,
+        1234.2550048828125,
+        708.2723388671875
+      ],
+      "text_score": 0.06187598779797554,
+      "mask_score": 0.78125,
+      "label": "logistics barcode stickers"
+    }
+  ]
+}

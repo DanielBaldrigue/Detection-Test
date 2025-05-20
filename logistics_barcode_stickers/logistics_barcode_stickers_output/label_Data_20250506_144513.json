@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250506_144513.png",
+  "prompt": "logistics barcode stickers",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        626.2753295898438,
+        120.03612518310547,
+        849.3162841796875,
+        344.33343505859375
+      ],
+      "text_score": 0.7371581792831421,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        329.7325439453125,
+        36.0015754699707,
+        1205.876708984375,
+        707.32861328125
+      ],
+      "text_score": 0.24944725632667542,
+      "mask_score": 0.9921875,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        652.5029907226562,
+        139.5810089111328,
+        818.4146728515625,
+        180.7764434814453
+      ],
+      "text_score": 0.07696083933115005,
+      "mask_score": 0.96875,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        626.5458984375,
+        120.20732879638672,
+        848.8076171875,
+        344.1357116699219
+      ],
+      "text_score": 0.08035746961832047,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        646.5059814453125,
+        181.1184844970703,
+        821.1902465820312,
+        222.8440399169922
+      ],
+      "text_score": 0.05921025574207306,
+      "mask_score": 0.9453125,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        15.364151000976562,
+        26.446687698364258,
+        1213.12060546875,
+        708.411376953125
+      ],
+      "text_score": 0.08509904146194458,
+      "mask_score": 0.9140625,
+      "label": "logistics barcode stickers"
+    },
+    {
+      "bbox": [
+        0.999908447265625,
+        18.009403228759766,
+        1018.0831909179688,
+        209.16539001464844
+      ],
+      "text_score": 0.05108273774385452,
+      "mask_score": 0.94140625,
+      "label": "logistics bar"
+    }
+  ]
+}
