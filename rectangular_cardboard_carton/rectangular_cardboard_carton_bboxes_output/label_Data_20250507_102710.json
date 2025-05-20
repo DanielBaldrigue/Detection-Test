@@ -1,0 +1,31 @@
+{
+  "image": "label_Data_20250507_102710.png",
+  "prompt": "rectangular cardboard carton",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        155.94195556640625,
+        1.8239235877990723,
+        1095.1134033203125,
+        715.7398681640625
+      ],
+      "text_score": 0.9458011984825134,
+      "mask_score": 0.97265625,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        760.589111328125,
+        65.21478271484375,
+        983.2255859375,
+        152.00514221191406
+      ],
+      "text_score": 0.06278920918703079,
+      "mask_score": 0.98046875,
+      "label": "rectangular cardboard carton"
+    }
+  ]
+}

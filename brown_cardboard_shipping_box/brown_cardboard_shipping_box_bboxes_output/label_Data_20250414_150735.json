@@ -1,0 +1,75 @@
+{
+  "image": "label_Data_20250414_150735.png",
+  "prompt": "brown cardboard shipping box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        307.4956970214844,
+        169.85391235351562,
+        1012.4856567382812,
+        615.9986572265625
+      ],
+      "text_score": 0.6984323263168335,
+      "mask_score": 0.90234375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        682.8668212890625,
+        249.85858154296875,
+        875.5938720703125,
+        495.0892333984375
+      ],
+      "text_score": 0.1581743359565735,
+      "mask_score": 0.98828125,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        306.988037109375,
+        169.92794799804688,
+        1012.1896362304688,
+        615.828125
+      ],
+      "text_score": 0.1710611879825592,
+      "mask_score": 0.90234375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        1210.4930419921875,
+        186.1486053466797,
+        1278.38720703125,
+        402.8725280761719
+      ],
+      "text_score": 0.13753245770931244,
+      "mask_score": 0.984375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        334.39019775390625,
+        0.6315234303474426,
+        1008.75390625,
+        75.94581604003906
+      ],
+      "text_score": 0.09401018172502518,
+      "mask_score": 0.98828125,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        233.27377319335938,
+        135.106201171875,
+        1127.1864013671875,
+        697.0349731445312
+      ],
+      "text_score": 0.05834583938121796,
+      "mask_score": 0.87109375,
+      "label": "brown cardboard shipping box"
+    }
+  ]
+}

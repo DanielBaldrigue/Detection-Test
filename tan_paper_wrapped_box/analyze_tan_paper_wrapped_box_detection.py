@@ -57,7 +57,7 @@ def load_predictions(pred_dir):
             data = json.load(f)
         img_name = os.path.basename(data["image"]).strip()
         for box in data["bboxes"]:
-            if box["label"] == "tan paper-wrapped box":
+            if box["label"] == "tan paper - wrapped box":
                 pred_boxes[img_name].append({
                     "bbox": box["bbox"],
                     "score": box["text_score"]

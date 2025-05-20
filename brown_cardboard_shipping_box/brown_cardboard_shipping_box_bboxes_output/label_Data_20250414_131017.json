@@ -1,0 +1,130 @@
+{
+  "image": "label_Data_20250414_131017.png",
+  "prompt": "brown cardboard shipping box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        272.51220703125,
+        93.43728637695312,
+        1192.8892822265625,
+        714.3717651367188
+      ],
+      "text_score": 0.37570643424987793,
+      "mask_score": 0.9765625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        262.29376220703125,
+        4.455385208129883,
+        1266.418701171875,
+        715.4727172851562
+      ],
+      "text_score": 0.3970029056072235,
+      "mask_score": 0.8359375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        300.7266540527344,
+        0.8172690868377686,
+        1211.3927001953125,
+        97.7866439819336
+      ],
+      "text_score": 0.16132023930549622,
+      "mask_score": 0.9921875,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        270.00115966796875,
+        6.28244161605835,
+        1205.8173828125,
+        716.3078002929688
+      ],
+      "text_score": 0.23792988061904907,
+      "mask_score": 0.921875,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        273.74774169921875,
+        95.11250305175781,
+        1190.7410888671875,
+        714.7562866210938
+      ],
+      "text_score": 0.13117322325706482,
+      "mask_score": 0.9765625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        265.8047790527344,
+        3.5799336433410645,
+        1267.234375,
+        715.5894775390625
+      ],
+      "text_score": 0.1276526302099228,
+      "mask_score": 0.87890625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        5.942420959472656,
+        2.8849196434020996,
+        1272.70947265625,
+        715.4098510742188
+      ],
+      "text_score": 0.16667540371418,
+      "mask_score": 0.88671875,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        1.938314437866211,
+        2.398560047149658,
+        254.31655883789062,
+        716.5911254882812
+      ],
+      "text_score": 0.07055959850549698,
+      "mask_score": 0.984375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        154.66693115234375,
+        215.83982849121094,
+        235.39019775390625,
+        451.69610595703125
+      ],
+      "text_score": 0.06560483574867249,
+      "mask_score": 0.93359375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        1.9044065475463867,
+        183.45567321777344,
+        118.69144439697266,
+        489.07489013671875
+      ],
+      "text_score": 0.06656918674707413,
+      "mask_score": 0.984375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        2.257699966430664,
+        182.9633026123047,
+        237.03231811523438,
+        488.8903503417969
+      ],
+      "text_score": 0.08151976019144058,
+      "mask_score": 0.9296875,
+      "label": "brown cardboard shipping box"
+    }
+  ]
+}

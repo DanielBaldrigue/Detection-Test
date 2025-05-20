@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250414_092126.png",
+  "prompt": "brown cardboard shipping box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        258.2039794921875,
+        6.110866069793701,
+        1153.598388671875,
+        715.0451049804688
+      ],
+      "text_score": 0.4134771525859833,
+      "mask_score": 0.9921875,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        1133.1661376953125,
+        53.66104507446289,
+        1277.3258056640625,
+        696.8101196289062
+      ],
+      "text_score": 0.09138210862874985,
+      "mask_score": 0.98046875,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        259.9637451171875,
+        6.969301700592041,
+        1151.3365478515625,
+        714.7760620117188
+      ],
+      "text_score": 0.07585817575454712,
+      "mask_score": 0.9921875,
+      "label": "brown cardboard"
+    },
+    {
+      "bbox": [
+        260.9048156738281,
+        80.87242126464844,
+        1148.1268310546875,
+        712.5208129882812
+      ],
+      "text_score": 0.2658804655075073,
+      "mask_score": 0.98046875,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        8.379783630371094,
+        3.443312644958496,
+        1271.9423828125,
+        714.7230224609375
+      ],
+      "text_score": 0.1520322561264038,
+      "mask_score": 0.8515625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        252.8529052734375,
+        2.788510322570801,
+        1270.46044921875,
+        715.4494018554688
+      ],
+      "text_score": 0.3593641221523285,
+      "mask_score": 0.98828125,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        1.6391277313232422,
+        0.8282768726348877,
+        272.04766845703125,
+        242.7029266357422
+      ],
+      "text_score": 0.053403329104185104,
+      "mask_score": 0.9765625,
+      "label": "brown cardboard shipping box"
+    }
+  ]
+}

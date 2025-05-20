@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250507_103917.png",
+  "prompt": "sticker shipping address label",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        549.8432006835938,
+        183.10533142089844,
+        799.150146484375,
+        431.16058349609375
+      ],
+      "text_score": 0.7577943801879883,
+      "mask_score": 0.99609375,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        549.755859375,
+        183.45777893066406,
+        798.8514404296875,
+        430.8201599121094
+      ],
+      "text_score": 0.23370636999607086,
+      "mask_score": 0.99609375,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        228.54327392578125,
+        71.68214416503906,
+        1196.52294921875,
+        714.7290649414062
+      ],
+      "text_score": 0.10818895697593689,
+      "mask_score": 0.98828125,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        577.61669921875,
+        204.62594604492188,
+        755.2969360351562,
+        259.4052429199219
+      ],
+      "text_score": 0.06656918674707413,
+      "mask_score": 0.9765625,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        564.9884643554688,
+        295.5588684082031,
+        676.08935546875,
+        343.3464050292969
+      ],
+      "text_score": 0.05834583938121796,
+      "mask_score": 0.953125,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        631.0175170898438,
+        390.5069580078125,
+        728.8001098632812,
+        418.8386535644531
+      ],
+      "text_score": 0.06187598779797554,
+      "mask_score": 0.84765625,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        575.119873046875,
+        247.11651611328125,
+        764.38623046875,
+        304.1513366699219
+      ],
+      "text_score": 0.05033063143491745,
+      "mask_score": 0.9453125,
+      "label": "address"
+    }
+  ]
+}

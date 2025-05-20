@@ -1,0 +1,53 @@
+{
+  "image": "label_Data_20250507_103552.png",
+  "prompt": "rectangular white mailing label",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        548.3546752929688,
+        172.06126403808594,
+        801.4910278320312,
+        422.6226806640625
+      ],
+      "text_score": 0.8104788661003113,
+      "mask_score": 0.99609375,
+      "label": "rectangular white mailing label"
+    },
+    {
+      "bbox": [
+        208.23040771484375,
+        28.577756881713867,
+        1203.4410400390625,
+        709.87744140625
+      ],
+      "text_score": 0.06278920918703079,
+      "mask_score": 0.98828125,
+      "label": "rectangular white mailing label"
+    },
+    {
+      "bbox": [
+        198.64871215820312,
+        5.517089366912842,
+        1230.8441162109375,
+        713.912109375
+      ],
+      "text_score": 0.05582314357161522,
+      "mask_score": 0.97265625,
+      "label": "rectangular white mailing label"
+    },
+    {
+      "bbox": [
+        549.095947265625,
+        174.17164611816406,
+        800.2987670898438,
+        419.7167053222656
+      ],
+      "text_score": 0.05582314357161522,
+      "mask_score": 0.99609375,
+      "label": "rectangular white mailing"
+    }
+  ]
+}

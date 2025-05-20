@@ -1,0 +1,31 @@
+{
+  "image": "label_Data_20250414_101301.png",
+  "prompt": "corrugated cardboard package",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        274.95257568359375,
+        115.62178802490234,
+        1268.413818359375,
+        714.3184814453125
+      ],
+      "text_score": 0.8509646654129028,
+      "mask_score": 0.984375,
+      "label": "corrugated cardboard package"
+    },
+    {
+      "bbox": [
+        280.10443115234375,
+        119.87796020507812,
+        1178.5703125,
+        714.5968017578125
+      ],
+      "text_score": 0.06097517907619476,
+      "mask_score": 0.99609375,
+      "label": "corrugated"
+    }
+  ]
+}

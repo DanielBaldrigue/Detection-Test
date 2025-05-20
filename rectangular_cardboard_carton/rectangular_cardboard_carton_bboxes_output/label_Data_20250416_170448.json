@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250416_170448.png",
+  "prompt": "rectangular cardboard carton",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        309.38201904296875,
+        168.8589630126953,
+        1013.500244140625,
+        618.1583862304688
+      ],
+      "text_score": 0.6984323263168335,
+      "mask_score": 0.890625,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        558.4815673828125,
+        246.5915069580078,
+        814.1932373046875,
+        451.5874328613281
+      ],
+      "text_score": 0.39793843030929565,
+      "mask_score": 0.984375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        1212.8243408203125,
+        187.5994110107422,
+        1278.29638671875,
+        402.81890869140625
+      ],
+      "text_score": 0.20946967601776123,
+      "mask_score": 0.984375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        334.6580505371094,
+        0.5770799517631531,
+        951.4874267578125,
+        75.77999877929688
+      ],
+      "text_score": 0.08269733935594559,
+      "mask_score": 0.953125,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        198.653564453125,
+        576.2173461914062,
+        1139.6312255859375,
+        716.0885620117188
+      ],
+      "text_score": 0.05033063143491745,
+      "mask_score": 0.85546875,
+      "label": "##on"
+    },
+    {
+      "bbox": [
+        333.1579284667969,
+        0.5318498611450195,
+        1009.4005126953125,
+        75.95703125
+      ],
+      "text_score": 0.07263670116662979,
+      "mask_score": 0.98828125,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        204.8596954345703,
+        163.82041931152344,
+        1141.0692138671875,
+        711.9414672851562
+      ],
+      "text_score": 0.07807816565036774,
+      "mask_score": 0.73828125,
+      "label": "rectangular cardboard carton"
+    }
+  ]
+}

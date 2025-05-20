@@ -1,0 +1,163 @@
+{
+  "image": "label_Data_20250508_134422.png",
+  "prompt": "rectangular cardboard carton",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        256.185546875,
+        164.15138244628906,
+        951.03759765625,
+        642.1707763671875
+      ],
+      "text_score": 0.793105959892273,
+      "mask_score": 0.9140625,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        690.121826171875,
+        332.32818603515625,
+        894.896484375,
+        587.96630859375
+      ],
+      "text_score": 0.23792988061904907,
+      "mask_score": 0.98828125,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        758.6710205078125,
+        0.4530680179595947,
+        1030.6527099609375,
+        124.16558074951172
+      ],
+      "text_score": 0.2658804655075073,
+      "mask_score": 0.984375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        521.5704956054688,
+        0.5698138475418091,
+        755.963623046875,
+        143.17678833007812
+      ],
+      "text_score": 0.26435837149620056,
+      "mask_score": 0.984375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        339.6351623535156,
+        0.6329691410064697,
+        534.8910522460938,
+        124.93560791015625
+      ],
+      "text_score": 0.24508501589298248,
+      "mask_score": 0.98046875,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        296.9595642089844,
+        45.82368850708008,
+        933.5064697265625,
+        168.44627380371094
+      ],
+      "text_score": 0.14033624529838562,
+      "mask_score": 0.953125,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        258.4820861816406,
+        1.1230677366256714,
+        1032.6990966796875,
+        167.43997192382812
+      ],
+      "text_score": 0.12085322290658951,
+      "mask_score": 0.9921875,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        255.9827423095703,
+        0.22828280925750732,
+        535.0252685546875,
+        125.24774169921875
+      ],
+      "text_score": 0.10087862610816956,
+      "mask_score": 0.97265625,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        254.50634765625,
+        0.34071698784828186,
+        452.6498107910156,
+        41.074275970458984
+      ],
+      "text_score": 0.16132023930549622,
+      "mask_score": 0.984375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        225.16143798828125,
+        573.2867431640625,
+        1141.4613037109375,
+        716.0580444335938
+      ],
+      "text_score": 0.05921025574207306,
+      "mask_score": 0.9765625,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        254.49649047851562,
+        0.40030092000961304,
+        451.7457275390625,
+        71.70528411865234
+      ],
+      "text_score": 0.10521054267883301,
+      "mask_score": 0.96875,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        530.8275146484375,
+        0.0732189416885376,
+        753.8604125976562,
+        96.72474670410156
+      ],
+      "text_score": 0.0792103186249733,
+      "mask_score": 0.94921875,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        298.09716796875,
+        0.512012243270874,
+        936.988037109375,
+        165.70025634765625
+      ],
+      "text_score": 0.07585817575454712,
+      "mask_score": 0.859375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        311.894775390625,
+        0.4746544361114502,
+        1024.9697265625,
+        139.6072235107422
+      ],
+      "text_score": 0.07369627058506012,
+      "mask_score": 0.875,
+      "label": "rectangular cardboard carton"
+    }
+  ]
+}

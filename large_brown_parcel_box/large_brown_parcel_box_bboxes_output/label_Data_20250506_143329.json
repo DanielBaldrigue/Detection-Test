@@ -1,0 +1,20 @@
+{
+  "image": "label_Data_20250506_143329.png",
+  "prompt": "large brown parcel box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        285.5670166015625,
+        3.9847326278686523,
+        1244.9676513671875,
+        714.2661743164062
+      ],
+      "text_score": 0.9207897186279297,
+      "mask_score": 0.9921875,
+      "label": "large brown parcel box"
+    }
+  ]
+}

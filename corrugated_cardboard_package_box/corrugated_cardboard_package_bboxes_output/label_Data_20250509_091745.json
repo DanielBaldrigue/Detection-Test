@@ -1,0 +1,75 @@
+{
+  "image": "label_Data_20250509_091745.png",
+  "prompt": "corrugated cardboard package",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        257.6993408203125,
+        168.22467041015625,
+        951.889404296875,
+        649.318115234375
+      ],
+      "text_score": 0.7905303239822388,
+      "mask_score": 0.9140625,
+      "label": "corrugated cardboard package"
+    },
+    {
+      "bbox": [
+        463.50042724609375,
+        276.0599670410156,
+        713.3737182617188,
+        460.8805847167969
+      ],
+      "text_score": 0.14033624529838562,
+      "mask_score": 0.98828125,
+      "label": "corrugated cardboard package"
+    },
+    {
+      "bbox": [
+        263.6872863769531,
+        0.7407188415527344,
+        1034.4703369140625,
+        168.26564025878906
+      ],
+      "text_score": 0.0838903859257698,
+      "mask_score": 0.9921875,
+      "label": "corrugated cardboard package"
+    },
+    {
+      "bbox": [
+        341.0019226074219,
+        0.8593100309371948,
+        535.5643920898438,
+        125.34130096435547
+      ],
+      "text_score": 0.06853749603033066,
+      "mask_score": 0.98046875,
+      "label": "cardboard package"
+    },
+    {
+      "bbox": [
+        521.0289916992188,
+        0.39628565311431885,
+        755.8303833007812,
+        143.6424560546875
+      ],
+      "text_score": 0.06656918674707413,
+      "mask_score": 0.984375,
+      "label": "cardboard package"
+    },
+    {
+      "bbox": [
+        759.21435546875,
+        0.42956650257110596,
+        1033.1470947265625,
+        123.90582275390625
+      ],
+      "text_score": 0.06371499598026276,
+      "mask_score": 0.984375,
+      "label": "cardboard package"
+    }
+  ]
+}

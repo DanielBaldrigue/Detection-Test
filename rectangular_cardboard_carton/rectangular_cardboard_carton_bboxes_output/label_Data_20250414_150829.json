@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250414_150829.png",
+  "prompt": "rectangular cardboard carton",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        308.1177978515625,
+        170.4511260986328,
+        1012.02099609375,
+        616.5873413085938
+      ],
+      "text_score": 0.7718434929847717,
+      "mask_score": 0.91796875,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        676.2423095703125,
+        243.0255126953125,
+        884.0320434570312,
+        500.5762023925781
+      ],
+      "text_score": 0.3015677034854889,
+      "mask_score": 0.984375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        1210.3548583984375,
+        186.8169708251953,
+        1278.5062255859375,
+        403.3204650878906
+      ],
+      "text_score": 0.22270013391971588,
+      "mask_score": 0.984375,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        334.0162658691406,
+        0.6754767894744873,
+        1007.2097778320312,
+        76.1356430053711
+      ],
+      "text_score": 0.09009299427270889,
+      "mask_score": 0.98828125,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        334.4863586425781,
+        0.37998050451278687,
+        947.5103759765625,
+        75.56645202636719
+      ],
+      "text_score": 0.07369627058506012,
+      "mask_score": 0.94921875,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        811.953125,
+        0.23503392934799194,
+        1011.6192626953125,
+        39.24654769897461
+      ],
+      "text_score": 0.06097517907619476,
+      "mask_score": 0.97265625,
+      "label": "rectangular cardboard carton"
+    },
+    {
+      "bbox": [
+        181.44927978515625,
+        576.723388671875,
+        1138.732666015625,
+        715.5096435546875
+      ],
+      "text_score": 0.05184546485543251,
+      "mask_score": 0.734375,
+      "label": "cardboard carton"
+    }
+  ]
+}

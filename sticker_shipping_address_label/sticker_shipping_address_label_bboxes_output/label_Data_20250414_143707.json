@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250414_143707.png",
+  "prompt": "sticker shipping address label",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        578.349365234375,
+        93.68549346923828,
+        811.3663330078125,
+        327.50616455078125
+      ],
+      "text_score": 0.7634837031364441,
+      "mask_score": 0.9921875,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        578.1580200195312,
+        93.93550109863281,
+        811.3546142578125,
+        327.3414611816406
+      ],
+      "text_score": 0.2658804655075073,
+      "mask_score": 0.9921875,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        264.99774169921875,
+        20.058116912841797,
+        1170.9705810546875,
+        699.1215209960938
+      ],
+      "text_score": 0.13568955659866333,
+      "mask_score": 0.99609375,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        605.299560546875,
+        113.6781997680664,
+        780.2703857421875,
+        154.2478790283203
+      ],
+      "text_score": 0.07369627058506012,
+      "mask_score": 0.96484375,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        591.7947998046875,
+        198.5699462890625,
+        691.733642578125,
+        237.10513305664062
+      ],
+      "text_score": 0.05582314357161522,
+      "mask_score": 0.953125,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        265.0731201171875,
+        19.297893524169922,
+        1169.499755859375,
+        699.10546875
+      ],
+      "text_score": 0.06371499598026276,
+      "mask_score": 0.99609375,
+      "label": "address label"
+    },
+    {
+      "bbox": [
+        645.3638305664062,
+        298.31427001953125,
+        741.9124755859375,
+        317.40618896484375
+      ],
+      "text_score": 0.05184546485543251,
+      "mask_score": 0.87890625,
+      "label": "address label"
+    }
+  ]
+}

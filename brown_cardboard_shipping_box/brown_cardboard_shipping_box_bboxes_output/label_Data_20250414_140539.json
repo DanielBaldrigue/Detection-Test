@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250414_140539.png",
+  "prompt": "brown cardboard shipping box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        307.40582275390625,
+        170.24632263183594,
+        1012.6119995117188,
+        615.9312744140625
+      ],
+      "text_score": 0.6867902874946594,
+      "mask_score": 0.91015625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        546.1680908203125,
+        259.6300354003906,
+        798.4278564453125,
+        451.26171875
+      ],
+      "text_score": 0.169956237077713,
+      "mask_score": 0.984375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        307.52764892578125,
+        170.09429931640625,
+        1011.9522094726562,
+        615.7630615234375
+      ],
+      "text_score": 0.1766715943813324,
+      "mask_score": 0.91015625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        1210.7161865234375,
+        185.6358642578125,
+        1278.3262939453125,
+        403.1551208496094
+      ],
+      "text_score": 0.14318770170211792,
+      "mask_score": 0.984375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        333.5754089355469,
+        0.7555621862411499,
+        1010.1011962890625,
+        75.7686996459961
+      ],
+      "text_score": 0.08756384253501892,
+      "mask_score": 0.98828125,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        298.7901306152344,
+        610.0928955078125,
+        1068.7547607421875,
+        685.8339233398438
+      ],
+      "text_score": 0.05033063143491745,
+      "mask_score": 0.9765625,
+      "label": "shipping"
+    },
+    {
+      "bbox": [
+        233.683349609375,
+        128.714111328125,
+        1123.8709716796875,
+        695.052001953125
+      ],
+      "text_score": 0.05665242671966553,
+      "mask_score": 0.8828125,
+      "label": "brown cardboard shipping box"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "image": "label_Data_20250416_170448.png",
+  "prompt": "sticker shipping address label",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        658.5223999023438,
+        348.8829345703125,
+        724.5526733398438,
+        414.761962890625
+      ],
+      "text_score": 0.6053325533866882,
+      "mask_score": 0.984375,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        658.804443359375,
+        349.127197265625,
+        724.4072265625,
+        414.473876953125
+      ],
+      "text_score": 0.20946967601776123,
+      "mask_score": 0.984375,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        558.719482421875,
+        247.26950073242188,
+        814.080078125,
+        450.5093078613281
+      ],
+      "text_score": 0.22541658580303192,
+      "mask_score": 0.984375,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        354.160888671875,
+        32.151573181152344,
+        408.20819091796875,
+        52.319759368896484
+      ],
+      "text_score": 0.1037486344575882,
+      "mask_score": 0.890625,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        314.9066162109375,
+        168.6682891845703,
+        1013.1118774414062,
+        615.0181884765625
+      ],
+      "text_score": 0.12085322290658951,
+      "mask_score": 0.89453125,
+      "label": "sticker shipping address label"
+    },
+    {
+      "bbox": [
+        558.8114624023438,
+        247.21224975585938,
+        814.0180053710938,
+        450.526611328125
+      ],
+      "text_score": 0.09807931631803513,
+      "mask_score": 0.984375,
+      "label": "shipping address label"
+    },
+    {
+      "bbox": [
+        1041.119873046875,
+        202.242919921875,
+        1093.9747314453125,
+        235.11903381347656
+      ],
+      "text_score": 0.05921025574207306,
+      "mask_score": 0.95703125,
+      "label": "sticker"
+    },
+    {
+      "bbox": [
+        348.18707275390625,
+        23.781192779541016,
+        415.1297302246094,
+        60.069786071777344
+      ],
+      "text_score": 0.06560483574867249,
+      "mask_score": 0.87890625,
+      "label": "sticker shipping address label"
+    }
+  ]
+}

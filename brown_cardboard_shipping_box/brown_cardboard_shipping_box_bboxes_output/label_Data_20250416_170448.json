@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250416_170448.png",
+  "prompt": "brown cardboard shipping box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        308.509765625,
+        169.46812438964844,
+        1013.9815673828125,
+        617.830322265625
+      ],
+      "text_score": 0.6397360563278198,
+      "mask_score": 0.890625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        558.200927734375,
+        246.64285278320312,
+        814.48291015625,
+        451.68231201171875
+      ],
+      "text_score": 0.2658804655075073,
+      "mask_score": 0.984375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        308.313720703125,
+        169.18246459960938,
+        1013.7513427734375,
+        617.585205078125
+      ],
+      "text_score": 0.18476751446723938,
+      "mask_score": 0.890625,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        1213.0189208984375,
+        187.50404357910156,
+        1278.234375,
+        402.5592041015625
+      ],
+      "text_score": 0.14223189651966095,
+      "mask_score": 0.984375,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        335.41461181640625,
+        0.8361116051673889,
+        1005.1336669921875,
+        75.67819213867188
+      ],
+      "text_score": 0.08035746961832047,
+      "mask_score": 0.98828125,
+      "label": "brown cardboard shipping box"
+    },
+    {
+      "bbox": [
+        559.06005859375,
+        246.95236206054688,
+        814.3170166015625,
+        450.8206787109375
+      ],
+      "text_score": 0.07263670116662979,
+      "mask_score": 0.984375,
+      "label": "brown cardboard box"
+    },
+    {
+      "bbox": [
+        203.428466796875,
+        158.46218872070312,
+        1143.548828125,
+        709.8825073242188
+      ],
+      "text_score": 0.0838903859257698,
+      "mask_score": 0.76953125,
+      "label": "brown cardboard shipping box"
+    }
+  ]
+}

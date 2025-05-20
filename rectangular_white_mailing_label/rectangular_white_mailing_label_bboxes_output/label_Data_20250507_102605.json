@@ -1,0 +1,31 @@
+{
+  "image": "label_Data_20250507_102605.png",
+  "prompt": "rectangular white mailing label",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        567.8046875,
+        168.4053955078125,
+        812.605224609375,
+        410.5140075683594
+      ],
+      "text_score": 0.8175744414329529,
+      "mask_score": 0.99609375,
+      "label": "rectangular white mailing label"
+    },
+    {
+      "bbox": [
+        259.4330139160156,
+        66.09003448486328,
+        1194.40087890625,
+        710.7340698242188
+      ],
+      "text_score": 0.06465348601341248,
+      "mask_score": 0.98828125,
+      "label": "rectangular white mailing label"
+    }
+  ]
+}

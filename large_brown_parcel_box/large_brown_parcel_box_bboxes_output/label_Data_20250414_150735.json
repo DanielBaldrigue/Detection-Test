@@ -1,0 +1,53 @@
+{
+  "image": "label_Data_20250414_150735.png",
+  "prompt": "large brown parcel box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        305.5386047363281,
+        166.9674835205078,
+        1014.6025390625,
+        617.5372314453125
+      ],
+      "text_score": 0.9005298018455505,
+      "mask_score": 0.90234375,
+      "label": "large brown parcel box"
+    },
+    {
+      "bbox": [
+        681.2957763671875,
+        248.87063598632812,
+        876.8248291015625,
+        496.0550231933594
+      ],
+      "text_score": 0.09138210862874985,
+      "mask_score": 0.98828125,
+      "label": "large brown parcel box"
+    },
+    {
+      "bbox": [
+        332.1518249511719,
+        0.9273979067802429,
+        1011.513671875,
+        76.77967834472656
+      ],
+      "text_score": 0.07055959850549698,
+      "mask_score": 0.98828125,
+      "label": "large brown parcel box"
+    },
+    {
+      "bbox": [
+        1209.9410400390625,
+        185.01885986328125,
+        1277.970458984375,
+        402.5762634277344
+      ],
+      "text_score": 0.08151976019144058,
+      "mask_score": 0.984375,
+      "label": "large brown parcel box"
+    }
+  ]
+}

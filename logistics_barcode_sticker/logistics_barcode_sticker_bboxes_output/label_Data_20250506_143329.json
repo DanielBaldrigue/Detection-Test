@@ -1,0 +1,64 @@
+{
+  "image": "label_Data_20250506_143329.png",
+  "prompt": "logistics barcode sticker",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        619.9921875,
+        148.3675537109375,
+        856.77490234375,
+        385.5891418457031
+      ],
+      "text_score": 0.8031737804412842,
+      "mask_score": 0.9921875,
+      "label": "logistics barcode sticker"
+    },
+    {
+      "bbox": [
+        619.8016357421875,
+        148.3437042236328,
+        856.5252685546875,
+        385.5914611816406
+      ],
+      "text_score": 0.1520322561264038,
+      "mask_score": 0.9921875,
+      "label": "logistics barcode sticker"
+    },
+    {
+      "bbox": [
+        294.18994140625,
+        3.584568500518799,
+        1234.912109375,
+        717.0493774414062
+      ],
+      "text_score": 0.10230471193790436,
+      "mask_score": 0.99609375,
+      "label": "logistics barcode sticker"
+    },
+    {
+      "bbox": [
+        637.3589477539062,
+        256.00408935546875,
+        728.7679443359375,
+        293.771484375
+      ],
+      "text_score": 0.07055959850549698,
+      "mask_score": 0.94140625,
+      "label": "logistics barcode sticker"
+    },
+    {
+      "bbox": [
+        648.6007080078125,
+        169.32037353515625,
+        824.4991455078125,
+        210.74545288085938
+      ],
+      "text_score": 0.07477004081010818,
+      "mask_score": 0.9765625,
+      "label": "logistics barcode sticker"
+    }
+  ]
+}
