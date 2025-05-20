@@ -1,0 +1,20 @@
+{
+  "image": "label_Data_20250507_102710.png",
+  "prompt": "tan paper-wrapped box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        155.21263122558594,
+        2.4614953994750977,
+        1095.57666015625,
+        714.99365234375
+      ],
+      "text_score": 0.8902942538261414,
+      "mask_score": 0.97265625,
+      "label": "tan paper - wrapped box"
+    }
+  ]
+}

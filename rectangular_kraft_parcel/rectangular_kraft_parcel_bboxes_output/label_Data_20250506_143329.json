@@ -1,0 +1,53 @@
+{
+  "image": "label_Data_20250506_143329.png",
+  "prompt": "rectangular kraft parcel",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        288.4103698730469,
+        2.3933887481689453,
+        1238.328125,
+        716.4228515625
+      ],
+      "text_score": 0.7279754281044006,
+      "mask_score": 0.9921875,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        619.30712890625,
+        147.92333984375,
+        857.3412475585938,
+        386.4541320800781
+      ],
+      "text_score": 0.36840569972991943,
+      "mask_score": 0.9921875,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        286.2745361328125,
+        0.31102895736694336,
+        1204.752685546875,
+        101.82144165039062
+      ],
+      "text_score": 0.09670579433441162,
+      "mask_score": 0.9921875,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        6.2987518310546875,
+        -0.4237031936645508,
+        1271.841064453125,
+        719.1554565429688
+      ],
+      "text_score": 0.05184546485543251,
+      "mask_score": 0.76953125,
+      "label": "rectangular kraft parcel"
+    }
+  ]
+}

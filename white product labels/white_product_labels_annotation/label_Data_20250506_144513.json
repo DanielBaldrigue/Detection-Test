@@ -1,0 +1,53 @@
+{
+  "image": "label_Data_20250506_144513.png",
+  "prompt": "white product labels",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        625.8159790039062,
+        119.87620544433594,
+        849.5753173828125,
+        344.8741760253906
+      ],
+      "text_score": 0.7098243832588196,
+      "mask_score": 0.99609375,
+      "label": "white product labels"
+    },
+    {
+      "bbox": [
+        329.53228759765625,
+        40.986942291259766,
+        1206.9166259765625,
+        708.1112670898438
+      ],
+      "text_score": 0.37983831763267517,
+      "mask_score": 0.9921875,
+      "label": "white product labels"
+    },
+    {
+      "bbox": [
+        11.867866516113281,
+        31.322858810424805,
+        1221.689697265625,
+        710.0100708007812
+      ],
+      "text_score": 0.06954174488782883,
+      "mask_score": 0.9296875,
+      "label": "white product labels"
+    },
+    {
+      "bbox": [
+        627.2255859375,
+        123.16669464111328,
+        841.01904296875,
+        225.60804748535156
+      ],
+      "text_score": 0.052618950605392456,
+      "mask_score": 0.91796875,
+      "label": "white product labels"
+    }
+  ]
+}

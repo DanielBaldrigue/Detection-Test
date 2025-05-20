@@ -1,0 +1,42 @@
+{
+  "image": "label_Data_20250506_143329.png",
+  "prompt": "tan paper-wrapped box",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        286.68023681640625,
+        3.105483055114746,
+        1239.22265625,
+        715.1182250976562
+      ],
+      "text_score": 0.8723474144935608,
+      "mask_score": 0.9921875,
+      "label": "tan paper - wrapped box"
+    },
+    {
+      "bbox": [
+        289.32025146484375,
+        4.197485446929932,
+        1236.1796875,
+        714.4221801757812
+      ],
+      "text_score": 0.07807816565036774,
+      "mask_score": 0.9921875,
+      "label": "tan paper"
+    },
+    {
+      "bbox": [
+        285.2796936035156,
+        1.0084784030914307,
+        1207.036865234375,
+        100.42024230957031
+      ],
+      "text_score": 0.06560483574867249,
+      "mask_score": 0.9921875,
+      "label": "tan paper - wrapped"
+    }
+  ]
+}

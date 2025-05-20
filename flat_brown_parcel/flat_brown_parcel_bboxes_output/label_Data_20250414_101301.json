@@ -1,0 +1,31 @@
+{
+  "image": "label_Data_20250414_101301.png",
+  "prompt": "flat brown parcel",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        273.5057067871094,
+        114.96349334716797,
+        1263.2603759765625,
+        713.5301513671875
+      ],
+      "text_score": 0.9005298018455505,
+      "mask_score": 0.98046875,
+      "label": "flat brown parcel"
+    },
+    {
+      "bbox": [
+        3.6739540100097656,
+        362.1143493652344,
+        209.1044464111328,
+        715.5921630859375
+      ],
+      "text_score": 0.05834583938121796,
+      "mask_score": 0.953125,
+      "label": "flat brown parcel"
+    }
+  ]
+}

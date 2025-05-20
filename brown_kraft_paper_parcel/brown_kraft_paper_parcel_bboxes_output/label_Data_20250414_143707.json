@@ -1,0 +1,53 @@
+{
+  "image": "label_Data_20250414_143707.png",
+  "prompt": "brown kraft paper parcel",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        260.9725341796875,
+        19.701425552368164,
+        1172.9849853515625,
+        700.3148193359375
+      ],
+      "text_score": 0.6334102749824524,
+      "mask_score": 0.99609375,
+      "label": "brown kraft paper parcel"
+    },
+    {
+      "bbox": [
+        577.6690063476562,
+        93.78033447265625,
+        812.6250610351562,
+        328.90576171875
+      ],
+      "text_score": 0.16026602685451508,
+      "mask_score": 0.9921875,
+      "label": "brown kraft paper parcel"
+    },
+    {
+      "bbox": [
+        38.8372802734375,
+        7.2309136390686035,
+        1257.607177734375,
+        710.5645751953125
+      ],
+      "text_score": 0.23792988061904907,
+      "mask_score": 0.96875,
+      "label": "brown kraft paper parcel"
+    },
+    {
+      "bbox": [
+        261.7745361328125,
+        20.546300888061523,
+        1172.115234375,
+        700.14892578125
+      ],
+      "text_score": 0.09401018172502518,
+      "mask_score": 0.99609375,
+      "label": "brown kraft"
+    }
+  ]
+}

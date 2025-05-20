@@ -1,0 +1,42 @@
+{
+  "image": "label_Data_20250506_144513.png",
+  "prompt": "white shipping label",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        624.779296875,
+        119.2016372680664,
+        851.1841430664062,
+        345.3245544433594
+      ],
+      "text_score": 0.7130321860313416,
+      "mask_score": 0.99609375,
+      "label": "white shipping label"
+    },
+    {
+      "bbox": [
+        328.9223937988281,
+        41.20845031738281,
+        1206.7373046875,
+        706.8572387695312
+      ],
+      "text_score": 0.19682618975639343,
+      "mask_score": 0.9921875,
+      "label": "white shipping label"
+    },
+    {
+      "bbox": [
+        625.971435546875,
+        120.42957305908203,
+        849.8291625976562,
+        343.593994140625
+      ],
+      "text_score": 0.06278920918703079,
+      "mask_score": 0.99609375,
+      "label": "white shipping"
+    }
+  ]
+}

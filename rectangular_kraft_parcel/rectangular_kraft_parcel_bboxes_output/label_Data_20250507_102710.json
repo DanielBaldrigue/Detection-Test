@@ -1,0 +1,75 @@
+{
+  "image": "label_Data_20250507_102710.png",
+  "prompt": "rectangular kraft parcel",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        155.74737548828125,
+        1.203625202178955,
+        1095.47216796875,
+        716.7338256835938
+      ],
+      "text_score": 0.907312273979187,
+      "mask_score": 0.97265625,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        760.691162109375,
+        65.9518051147461,
+        981.8836059570312,
+        152.45114135742188
+      ],
+      "text_score": 0.06187598779797554,
+      "mask_score": 0.98046875,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        517.8701782226562,
+        99.81818389892578,
+        766.94287109375,
+        349.4319763183594
+      ],
+      "text_score": 0.08509904146194458,
+      "mask_score": 0.99609375,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        1148.7525634765625,
+        33.897735595703125,
+        1277.88232421875,
+        232.31483459472656
+      ],
+      "text_score": 0.10230471193790436,
+      "mask_score": 0.890625,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        1.6304397583007812,
+        385.080078125,
+        426.5789794921875,
+        717.6828002929688
+      ],
+      "text_score": 0.07585817575454712,
+      "mask_score": 0.9453125,
+      "label": "rectangular kraft parcel"
+    },
+    {
+      "bbox": [
+        193.4554443359375,
+        555.4738159179688,
+        426.439208984375,
+        717.9176025390625
+      ],
+      "text_score": 0.05921025574207306,
+      "mask_score": 0.98828125,
+      "label": "rectangular kraft parcel"
+    }
+  ]
+}
