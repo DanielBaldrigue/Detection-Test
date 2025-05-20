@@ -1,0 +1,75 @@
+{
+  "image": "label_Data_20250506_144513.png",
+  "prompt": "sticker shipping address labels",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        625.9760131835938,
+        120.11971282958984,
+        849.6087036132812,
+        344.545166015625
+      ],
+      "text_score": 0.7154240012168884,
+      "mask_score": 0.99609375,
+      "label": "sticker shipping address labels"
+    },
+    {
+      "bbox": [
+        329.64337158203125,
+        41.17465591430664,
+        1206.2525634765625,
+        706.6375122070312
+      ],
+      "text_score": 0.20434190332889557,
+      "mask_score": 0.9921875,
+      "label": "sticker shipping address labels"
+    },
+    {
+      "bbox": [
+        625.8331298828125,
+        120.35562896728516,
+        849.4744873046875,
+        344.3617248535156
+      ],
+      "text_score": 0.2782568037509918,
+      "mask_score": 0.99609375,
+      "label": "sticker shipping address labels"
+    },
+    {
+      "bbox": [
+        637.3162841796875,
+        221.45932006835938,
+        735.9034423828125,
+        258.9796447753906
+      ],
+      "text_score": 0.054198723286390305,
+      "mask_score": 0.9609375,
+      "label": "sticker"
+    },
+    {
+      "bbox": [
+        330.94073486328125,
+        40.86903381347656,
+        1205.488525390625,
+        706.5014038085938
+      ],
+      "text_score": 0.11436853557825089,
+      "mask_score": 0.9921875,
+      "label": "shipping address labels"
+    },
+    {
+      "bbox": [
+        650.622314453125,
+        139.40077209472656,
+        819.7315063476562,
+        181.4906463623047
+      ],
+      "text_score": 0.05834583938121796,
+      "mask_score": 0.96875,
+      "label": "sticker address labels"
+    }
+  ]
+}

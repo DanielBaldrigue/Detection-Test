@@ -1,0 +1,86 @@
+{
+  "image": "label_Data_20250507_103917.png",
+  "prompt": "sticker shipping address labels",
+  "sam_type": "sam2.1_hiera_small",
+  "box_threshold": 0.05,
+  "text_threshold": 0.05,
+  "bboxes": [
+    {
+      "bbox": [
+        549.8931274414062,
+        183.1775360107422,
+        799.0665283203125,
+        431.3004455566406
+      ],
+      "text_score": 0.7386690378189087,
+      "mask_score": 0.99609375,
+      "label": "sticker shipping address labels"
+    },
+    {
+      "bbox": [
+        549.1923828125,
+        183.42276000976562,
+        798.6982421875,
+        431.0771179199219
+      ],
+      "text_score": 0.2658804655075073,
+      "mask_score": 0.99609375,
+      "label": "sticker shipping address labels"
+    },
+    {
+      "bbox": [
+        228.5870361328125,
+        71.0831298828125,
+        1196.318603515625,
+        714.6528930664062
+      ],
+      "text_score": 0.14414885640144348,
+      "mask_score": 0.98828125,
+      "label": "sticker shipping address labels"
+    },
+    {
+      "bbox": [
+        229.44400024414062,
+        70.91050720214844,
+        1194.3748779296875,
+        714.850830078125
+      ],
+      "text_score": 0.05665242671966553,
+      "mask_score": 0.98828125,
+      "label": "address labels"
+    },
+    {
+      "bbox": [
+        564.526611328125,
+        295.2684326171875,
+        676.0545654296875,
+        343.697265625
+      ],
+      "text_score": 0.05665242671966553,
+      "mask_score": 0.953125,
+      "label": "sticker labels"
+    },
+    {
+      "bbox": [
+        576.4845581054688,
+        204.2291259765625,
+        755.8876953125,
+        259.8369445800781
+      ],
+      "text_score": 0.060086652636528015,
+      "mask_score": 0.97265625,
+      "label": "sticker address labels"
+    },
+    {
+      "bbox": [
+        225.2635498046875,
+        67.58377075195312,
+        1271.082275390625,
+        715.1661987304688
+      ],
+      "text_score": 0.07477004081010818,
+      "mask_score": 0.984375,
+      "label": "sticker shipping address labels"
+    }
+  ]
+}
