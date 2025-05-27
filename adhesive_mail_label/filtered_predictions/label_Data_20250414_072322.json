@@ -9,7 +9,7 @@
         256.9046936035156
       ],
       "text_score": 0.47487467527389526,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -19,7 +19,7 @@
         262.83001708984375
       ],
       "text_score": 0.4695202708244324,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -29,7 +29,7 @@
         270.2391662597656
       ],
       "text_score": 0.40827676653862,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -39,7 +39,7 @@
         281.4458312988281
       ],
       "text_score": 0.37570643424987793,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     }
   ]
 }

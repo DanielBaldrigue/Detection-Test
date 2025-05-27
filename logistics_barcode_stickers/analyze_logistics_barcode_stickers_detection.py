@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 from sklearn.metrics import precision_recall_curve, average_precision_score
 
+used_prompt = "logistics barcode stickers"  # Change this to the prompt you used for detection
+used_prompt_with_underscore = used_prompt.replace(" ", "_")
+
 def convert_rel_to_abs(x, y, w, h, img_w, img_h):
     x1 = x / 100 * img_w
     y1 = y / 100 * img_h
@@ -57,7 +60,7 @@ def load_predictions(pred_dir):
             data = json.load(f)
         img_name = os.path.basename(data["image"]).strip()
         for box in data["bboxes"]:
-            if box["label"] == "logistics barcode stickers":
+            if box["label"] == used_prompt:
                 pred_boxes[img_name].append({
                     "bbox": box["bbox"],
                     "score": box["text_score"]
@@ -87,7 +90,7 @@ def match_predictions(gt_boxes, pred_boxes, iou_thresh=0.3):  # Lowered IoU thre
             y_scores.append(pred["score"])
     return np.array(y_true), np.array(y_scores), np.array(matched_ious)
 
-def plot_pr_curve(y_true, y_scores, out_dir="plots"):
+def plot_pr_curve(y_true, y_scores, out_dir="plots_without_filter"):
     if len(np.unique(y_true)) < 2:
         print("⚠️ Cannot plot PR curve: no positive matches found.")
         return
@@ -106,7 +109,7 @@ def plot_pr_curve(y_true, y_scores, out_dir="plots"):
     plt.show()
     plt.close()
 
-def plot_f1_score(y_true, y_scores, out_dir="plots"):
+def plot_f1_score(y_true, y_scores, out_dir="plots_without_filter"):
     if len(np.unique(y_true)) < 2:
         print("⚠️ Cannot plot F1 curve: not enough positive boxes.")
         return
@@ -123,7 +126,7 @@ def plot_f1_score(y_true, y_scores, out_dir="plots"):
     plt.show()
     plt.close()
 
-def plot_score_histograms(y_true, y_scores, out_dir="plots"):
+def plot_score_histograms(y_true, y_scores, out_dir="plots_without_filter"):
     if len(y_scores) == 0:
         print("⚠️ No predictions to plot.")
         return
@@ -142,7 +145,7 @@ def plot_score_histograms(y_true, y_scores, out_dir="plots"):
     plt.close()
 
 
-def plot_calibration(y_true, y_scores, bins=10, out_dir="plots"):
+def plot_calibration(y_true, y_scores, bins=10, out_dir="plots_without_filter"):
     if len(y_scores) == 0:
         return
     bin_edges = np.linspace(0, 1, bins + 1)
@@ -169,7 +172,7 @@ def plot_calibration(y_true, y_scores, bins=10, out_dir="plots"):
     plt.show()
     plt.close()
 
-def plot_iou_distribution(ious, y_true, out_dir="plots"):
+def plot_iou_distribution(ious, y_true, out_dir="plots_without_filter"):
     if np.sum(y_true == 1) == 0:
         print("⚠️ No true positives to plot IoU distribution.")
         return
@@ -188,8 +191,8 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--gt_file", required=True, help="Path to ground-truth JSON file")
-    parser.add_argument("--pred_dir", required=True, help="Directory containing prediction JSONs")
+    parser.add_argument("--gt_file", default="project-2-at-2025-05-11-20-44-75ac7d14.json", help="Path to ground-truth JSON file")
+    parser.add_argument("--pred_dir", default= used_prompt_with_underscore + "_bboxes_output", help="Directory containing prediction JSONs")
     args = parser.parse_args()
 
     gt = load_ground_truth(args.gt_file)

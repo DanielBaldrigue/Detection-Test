@@ -9,7 +9,7 @@
         547.009033203125
       ],
       "text_score": 0.3835258483886719,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -19,7 +19,7 @@
         548.6792602539062
       ],
       "text_score": 0.378459095954895,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -29,7 +29,7 @@
         548.21337890625
       ],
       "text_score": 0.3711366057395935,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -39,7 +39,7 @@
         553.5355224609375
       ],
       "text_score": 0.36840569972991943,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -49,7 +49,7 @@
         344.9609069824219
       ],
       "text_score": 0.36296918988227844,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -59,7 +59,7 @@
         337.6923828125
       ],
       "text_score": 0.35667070746421814,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -69,7 +69,7 @@
         338.3232116699219
       ],
       "text_score": 0.34953272342681885,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -79,7 +79,7 @@
         340.2148132324219
       ],
       "text_score": 0.3442229926586151,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     }
   ]
 }

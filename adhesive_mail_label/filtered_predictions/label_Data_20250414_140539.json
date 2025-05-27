@@ -9,7 +9,7 @@
         421.23663330078125
       ],
       "text_score": 0.5365557670593262,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     },
     {
       "bbox": [
@@ -19,7 +19,7 @@
         215.9096221923828
       ],
       "text_score": 0.2743513584136963,
-      "label": "white product labels"
+      "label": "adhesive mail label"
     }
   ]
 }

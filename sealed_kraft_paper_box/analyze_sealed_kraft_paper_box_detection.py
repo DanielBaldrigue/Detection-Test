@@ -6,6 +6,11 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 from sklearn.metrics import precision_recall_curve, average_precision_score
 
+used_prompt = "sealed kraft - paper box"  # Change this to the prompt you used for detection
+used_prompt_with_underscore = used_prompt.replace("-", " ")
+used_prompt_with_underscore = used_prompt.replace("   ", " ")
+used_prompt_with_underscore = used_prompt.replace(" ", "_")
+
 def convert_rel_to_abs(x, y, w, h, img_w, img_h):
     x1 = x / 100 * img_w
     y1 = y / 100 * img_h
@@ -57,7 +62,7 @@ def load_predictions(pred_dir):
             data = json.load(f)
         img_name = os.path.basename(data["image"]).strip()
         for box in data["bboxes"]:
-            if box["label"] == "sealed kraft paper box":
+            if box["label"] == used_prompt:
                 pred_boxes[img_name].append({
                     "bbox": box["bbox"],
                     "score": box["text_score"]
@@ -188,8 +193,8 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--gt_file", required=True, help="Path to ground-truth JSON file")
-    parser.add_argument("--pred_dir", required=True, help="Directory containing prediction JSONs")
+    parser.add_argument("--gt_file", default="project-2-at-2025-05-11-20-44-75ac7d14.json", help="Path to ground-truth JSON file")
+    parser.add_argument("--pred_dir", default= used_prompt_with_underscore + "_bboxes_output", help="Directory containing prediction JSONs")
     args = parser.parse_args()
 
     gt = load_ground_truth(args.gt_file)

@@ -6,6 +6,10 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 from sklearn.metrics import precision_recall_curve, average_precision_score
 
+used_prompt = "white product labels"  # Change this to the prompt you used for detection
+used_prompt_with_underscore = used_prompt.replace(" ", "_")
+min_score = 0.3207
+
 def is_box_inside(inner, outer):
     """Return True if `inner` box is fully inside `outer` box."""
     return (
@@ -38,7 +42,7 @@ def filter_large_enclosing_boxes_and_track_tps(pred_boxes_dict, gt_boxes_dict, i
             for j in range(len(boxes)):
                 if i != j and keep[j]:
                     # Only remove the outer box if it's lower confidence than the inner one
-                    if is_box_inside(boxes[i]["bbox"], boxes[j]["bbox"]) and boxes[i]["score"] > boxes[j]["score"]:
+                    if is_box_inside(boxes[i]["bbox"], boxes[j]["bbox"]):
                         keep[j] = False
                         if is_tp[j]:
                             removed_tp.append(boxes[j])
@@ -101,7 +105,7 @@ def load_predictions(pred_dir):
             data = json.load(f)
         img_name = os.path.basename(data["image"]).strip()
         for box in data["bboxes"]:
-            if box["label"] == "white product labels":
+            if box["label"] == used_prompt and box["text_score"] >= min_score:
                 pred_boxes[img_name].append({
                     "bbox": box["bbox"],
                     "score": box["text_score"]
@@ -131,12 +135,15 @@ def match_predictions(gt_boxes, pred_boxes, iou_thresh=0.3):  # Lowered IoU thre
             y_scores.append(pred["score"])
     return np.array(y_true), np.array(y_scores), np.array(matched_ious)
 
-def plot_pr_curve(y_true, y_scores):
+def plot_pr_curve(y_true, y_scores, out_dir="plots_with_filter"):
     if len(np.unique(y_true)) < 2:
         print("⚠️ Cannot plot PR curve: no positive matches found.")
         return
     precision, recall, _ = precision_recall_curve(y_true, y_scores)
     ap = average_precision_score(y_true, y_scores)
+    
+    os.makedirs(out_dir, exist_ok=True)
+
     plt.figure()
     plt.plot(recall, precision, label=f"AP = {ap:.3f}")
     plt.xlabel("Recall")
@@ -144,26 +151,33 @@ def plot_pr_curve(y_true, y_scores):
     plt.title("Precision-Recall Curve")
     plt.legend()
     plt.grid(True)
+    plt.savefig(os.path.join(out_dir, "pr_curve.png"), dpi=300, bbox_inches="tight")
     plt.show()
+    plt.close()
 
-def plot_f1_score(y_true, y_scores):
+def plot_f1_score(y_true, y_scores, out_dir="plots_with_filter"):
     if len(np.unique(y_true)) < 2:
         print("⚠️ Cannot plot F1 curve: not enough positive labels.")
         return
     precision, recall, thresholds = precision_recall_curve(y_true, y_scores)
     f1 = 2 * (precision * recall) / (precision + recall + 1e-8)
+    os.makedirs(out_dir, exist_ok=True)
     plt.figure()
     plt.plot(thresholds, f1[:-1])
     plt.xlabel("Confidence Threshold")
     plt.ylabel("F1 Score")
     plt.title("F1 Score vs Threshold")
     plt.grid(True)
+    plt.savefig(os.path.join(out_dir, "f1_score.png"), dpi=300, bbox_inches="tight")
     plt.show()
+    plt.close()
 
-def plot_score_histograms(y_true, y_scores):
+def plot_score_histograms(y_true, y_scores, out_dir="plots_with_filter"):
     if len(y_scores) == 0:
         print("⚠️ No predictions to plot.")
         return
+    
+    os.makedirs(out_dir, exist_ok=True)
     plt.figure()
     plt.hist(y_scores[y_true == 1], bins=20, alpha=0.6, label="True Positives")
     plt.hist(y_scores[y_true == 0], bins=20, alpha=0.6, label="False Positives")
@@ -172,9 +186,11 @@ def plot_score_histograms(y_true, y_scores):
     plt.title("Score Distribution")
     plt.legend()
     plt.grid(True)
+    plt.savefig(os.path.join(out_dir, "score_histograms.png"), dpi=300, bbox_inches="tight")
     plt.show()
+    plt.close()
 
-def plot_calibration(y_true, y_scores, bins=10):
+def plot_calibration(y_true, y_scores, bins=10, out_dir="plots_with_filter"):
     if len(y_scores) == 0:
         return
     bin_edges = np.linspace(0, 1, bins + 1)
@@ -187,6 +203,8 @@ def plot_calibration(y_true, y_scores, bins=10):
         conf = y_scores[mask].mean()
         accuracies.append(acc)
         confidences.append(conf)
+    
+    os.makedirs(out_dir, exist_ok=True)
     plt.figure()
     plt.plot(confidences, accuracies, marker='o', label="Model")
     plt.plot([0, 1], [0, 1], "k--", label="Perfect Calibration")
@@ -195,26 +213,31 @@ def plot_calibration(y_true, y_scores, bins=10):
     plt.title("Calibration Plot")
     plt.legend()
     plt.grid(True)
+    plt.savefig(os.path.join(out_dir, "calibration.png"), dpi=300, bbox_inches="tight")
     plt.show()
+    plt.close()
 
-def plot_iou_distribution(ious, y_true):
+def plot_iou_distribution(ious, y_true, out_dir="plots_without_filter"):
     if np.sum(y_true == 1) == 0:
         print("⚠️ No true positives to plot IoU distribution.")
         return
+    os.makedirs(out_dir, exist_ok=True)
     plt.figure()
     plt.hist(ious[y_true == 1], bins=20)
     plt.xlabel("IoU")
     plt.ylabel("True Positive Count")
     plt.title("IoU Distribution for TPs")
     plt.grid(True)
+    plt.savefig(os.path.join(out_dir, "iou_distribution.png"), dpi=300, bbox_inches="tight")
     plt.show()
+    plt.close()
 
 if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--gt_file", required=True, help="Path to ground-truth JSON file")
-    parser.add_argument("--pred_dir", required=True, help="Directory containing prediction JSONs")
+    parser.add_argument("--gt_file", default="project-2-at-2025-05-11-20-44-75ac7d14.json", help="Path to ground-truth JSON file")
+    parser.add_argument("--pred_dir", default= used_prompt_with_underscore + "_bboxes_output", help="Directory containing prediction JSONs")
     args = parser.parse_args()
 
     gt = load_ground_truth(args.gt_file)
@@ -226,6 +249,49 @@ if __name__ == "__main__":
         json.dump(filtered_tp_preds, f, indent=2)
 
     y_true, y_scores, ious = match_predictions(gt, preds)
+                    # Step 1: Find the minimum score among TPs
+tp_scores = y_scores[y_true == 1]
+if len(tp_scores) == 0:
+    print("⚠️ No true positives found. Skipping threshold filtering.")
+else:
+    min_tp_score = np.min(tp_scores)
+
+    # Step 2: Count FPs with score >= min_tp_score
+    fp_scores = y_scores[y_true == 0]
+    high_score_fp_count = np.sum(fp_scores >= min_tp_score)
+
+    print(f"✅ Least TP score: {min_tp_score:.4f}")
+    print(f"📦 False Positives with score ≥ {min_tp_score:.4f}: {high_score_fp_count}")
+
+    # Step 3: Filter predictions with score ≥ min_tp_score
+    filtered_preds = defaultdict(list)
+    for img_name, boxes in preds.items():
+        for box in boxes:
+            if box["score"] >= min_tp_score:
+                filtered_preds[img_name].append(box)
+
+    # Step 4: Save filtered predictions to JSON
+    output_dir = "filtered_predictions"
+    os.makedirs(output_dir, exist_ok=True)
+
+
+    for img_name, boxes in filtered_preds.items():
+        out_path = os.path.join(output_dir, img_name.replace(".png", ".json"))
+        with open(out_path, "w") as f:
+            json.dump({
+                "image": img_name,
+                "bboxes": [
+                    {
+                        "bbox": box["bbox"],
+                        "text_score": box["score"],
+                        "label": "white product labels"
+                    }
+                    for box in boxes
+                ]
+            }, f, indent=2)
+
+    print(f"✅ Filtered predictions saved to '{output_dir}/'")
+
 
     print("\nSample predicted boxes vs. GT for first image with predictions:")
     for img_name in preds:
